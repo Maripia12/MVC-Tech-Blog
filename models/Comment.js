@@ -5,14 +5,20 @@ class Comment extends Model {}
 
 Comment.init(
   {
-    body: {
-      type: DataTypes.STRING,
+    title: {
+      title: DataTypes.STRING,
+    },
+    date_created: {
+      type: DataTypes.DATE,
       allowNull: false,
+    },
+    content: {
+      type: DataTypes.STRING,
     },
   },
 
   {
-    sequelize
+    sequelize,
   }
 );
 
