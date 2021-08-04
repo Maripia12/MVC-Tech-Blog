@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
-const withAuth = require("../utils/auth");
+ 
 
 
 
@@ -16,6 +16,7 @@ router.post("/", async (req, res) => {
       req.session.username = userData.username;
       req.session.email = userData.email;
       req.session.loggedIn = true;
+      res.redirect('/');
 
       res.json(userData);
     });
@@ -35,14 +36,19 @@ router.post('/login', (req,res)=>{
             return;
         }
 
+        if(!userData.checkPassword(req.body.password)){
+          res.status(400).json({message:'wrong password'})
+          return
+        }
 
-        req.session.save(() => {
-            req.session.id = userData.id;
-            req.session.username = userData.username;
-            req.session.loggedIn = true;
+        req.session.save(()=>{
+          req.session.userId = userData.id;
+          req.session.username = userData.username;
+          req.session.loggedIn = true;
 
-            res.json({userData, message:'You are now logged in'});
-        });
+          res.json({user: userData, message: 'logged in'})
+        })
+       
     });
 });
 

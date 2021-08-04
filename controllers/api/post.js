@@ -1,12 +1,12 @@
 const router = require("express").Router();
-const { endsWith } = require("sequelize/types/lib/operators");
+
 const { User, Post, Comment } = require("../../models");
-const withAuth = require("../utils/auth");
-const { route, put } = require("./user_route");
+// const withAuth = require("../utils/auth");
+// const { route, put } = require("./user_route");
 
 //Create route for Post 
 
-router.post("/", withAuth, (req, res) => {
+router.post("/",  (req, res) => {
   Post.create({
     title: req.body.title,
     content: req.body.content,
@@ -19,7 +19,7 @@ router.post("/", withAuth, (req, res) => {
 
 //TODO:
 //PUT ROUTE FOR POST BY ID
-router.put('/:id', withAuth,async (req,res)=>{
+router.put('/:id', async (req,res)=>{
  
  try{
      const [updatedData]= await Post.update(req.body, {
@@ -41,7 +41,7 @@ router.put('/:id', withAuth,async (req,res)=>{
 
 //TODO:
 //DELETE ROUTE BY ID
-router.delete('/:id', withAuth, async(req, res)=>{
+router.delete('/:id', async(req, res)=>{
     try{
         const [dataToDelete]= Post.destroy({
             where:{

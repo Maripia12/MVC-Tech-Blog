@@ -1,0 +1,49 @@
+
+
+* {
+    /* background-color: rgb(131, 150, 235); */
+    background-image: url(../imgaes/photo-1513542789411-b6a5d4f31634.jpg);
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.navbar li {
+    display: inline-block;
+    font-size:  25px;
+    padding-left: 50px;
+    margin-left: 120px;
+   padding-right: 10px ;
+
+
+}
+
+.navbar a {
+    color: darkmagenta;
+}
+
+header h1 {
+    margin-top: 25px;
+    
+}
+
+
+#login{
+    margin: 10px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+label {
+    margin: 5px;
+    display: inline-block;
+ 
+}
+
+button {
+    margin-top: 15px;
+    margin: 10px;
+    background-color: rgb(172, 18, 151);
+    color: rgb(197, 36, 68);
+}
+
