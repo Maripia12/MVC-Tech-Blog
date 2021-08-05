@@ -27,7 +27,7 @@ ___
 
 https://github.com/Maripia12/MVC-Tech-Blog
 
-<!-- [Heroku-deploy-site]() -->
+[Heroku-deployed-site](https://git.heroku.com/mvc-nodejs-mysql.git)
 
 
 ![screenshot](images/techblog-login.png)
