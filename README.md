@@ -15,9 +15,25 @@ Create a CMS-style blog site to publish articles, blog posts thoughts and opinio
 
 
 ## Libraries:
-* MySQL2 to connect to MySQL database
-* Sequelize (ORM)
+* MySQL2 and Sequelize (ORM) to connect to MySQL database
 * Dotenv packages to use environmental variable to store sensitive data
+* Bcrypt to has password
+* Handlebars.js as the template engine
+* Node.js and Express.js to create API
+* Heroku to deploy site
 
+___
+## Screenshot:
+
+https://github.com/Maripia12/MVC-Tech-Blog
+
+<!-- [Heroku-deploy-site]() -->
+
+
+![screenshot](images/techblog-login.png)
+
+![screenshot](images/blog-signup.png)
+
+![screenshot](images/blog-addnote.png)
 
 
