@@ -25,9 +25,9 @@ Create a CMS-style blog site to publish articles, blog posts thoughts and opinio
 ___
 ## Screenshot:
 
-https://github.com/Maripia12/MVC-Tech-Blog
+[My GitHub](https://github.com/Maripia12/MVC-Tech-Blog)
 
-[Heroku-deployed-site](https://git.heroku.com/mvc-nodejs-mysql.git)
+[Heroku-deployed-site](https://aqueous-escarpment-96680.herokuapp.com/)
 
 
 ![screenshot](images/techblog-login.png)
